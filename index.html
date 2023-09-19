@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+    <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script src="https://kit.fontawesome.com/375cfc3d13.js" crossorigin="anonymous"></script>
+
+<link
+href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+rel="stylesheet"
+/>
+<link
+<link href="./css/all.minn.css" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/all.minn.css" />
+<link href="./css/bootstrap.minn.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
+<title>Bookmarker</title>
+    </head>
+    <body>
+<header class="container">
+  <h1 class="display-5"> Bookmarker </h1>
+  <hr class="my-4 " />
+</header>
+<main class="container">
+<h2><i class="fa-solid fa-bookmark "></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2> </h2>
+
+  <div class="mb-4">
+<label for="UserName" class="form-label fw-bold">  <i class="me-2 fa-solid fa-book-bookmark"></i> Site Name </label>
+<input 
+oninput="validationName()"
+type="text"
+name="name"
+id="UserName"
+class="form-control"
+placeholder="Bookmark name">
+</div>
+<div class="mb-5">
+<label for="userUrl" class="form-label fw-bold"><i class="me-2 fa-solid fa-link"></i> Site URL</label>
+ <input
+ oninput="validationUrl()"
+ type="text"
+name="url"
+id="userUrl"
+class="form-control"
+placeholder="Website URL">
+</div>
+<button class="btn mx-auto d-block"  onclick="addData()"> Submit</button>
+<hr class="my-4" />
+
+<div class="table-responsive">
+  <table class="table bg-secondary">
+    <thead class="fw-semibold">
+      <td>Index</td>
+      <td>Website name</td>
+      <td>Visit</td>
+      <td>Delete</td>
+    </thead>
+    <tbody id="tableData"">
+  
+    </tbody>
+  </table>
+</div>
+
+</main>
+
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+unction validationName(){
+var text =bookmarkInput.value ;
+var regexName=/^[A-z]{1-4}$/;
+if (regexName.test(text)==true) {
+
+    bookmarkInput.classList.add('is-valid')
+    bookmarkInput.classList.remove('is-invalid')
+return true ;
+}
+else{
+    bookmarkInput.classList.remove('is-valid')
+    bookmarkInput.classList.add('is-invalid')
+return false ;
+}
+}
+
+function validationUrl(){
+var text=siteUrlInput.value
+var regexUrl=/^[w]{3}[/.][a-z]{4-7}[./][com]$/
+
+}if (regexUrl.test(text)==true) {
+
+    siteUrlInputInput.classList.add('is-valid')
+    siteUrlInputInput.classList.remove('is-invalid')
+return true ;
+}
+else {
+    siteUrlInputInput.classList.remove('is-valid')
+    siteUrlInput.classList.add('is-invalid')
+}
